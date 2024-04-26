@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AndroidTaskApril25</string>
+    <string name="content_description_end_icon">content_description_end_icon</string>
+    <string name="text_view_user_name">User Name:</string>
+    <string name="text_view_password">password</string>
+    <string name="button_text_sign_in">Sign In</string>
+    <string name="text_view_text_forgot_password">Forgot Password</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_text_sign_up">Sign Up\n</string>
+    <string name="text_view_confirm_password">Confirm Password</string>
+
+    <string name="text_view_error_message_email">The email is incorrect!</string>
+    <string name="text_view_error_message_passwrod">The password is incorrect! You need to have a password > 8 chars, include Capital, small letter and a special char!</string>
+</resources>
