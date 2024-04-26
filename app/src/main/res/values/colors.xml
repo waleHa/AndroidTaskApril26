@@ -2,4 +2,9 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="button_signs_pressed">#8D71C0</color>
+    <color name="button_numbers_pressed">#8D7190</color>
+    <color name="button_default">#77AAC7</color>
+    <color name="button_focused">#2F1A53</color>
+    <color name="button_signs_text_color">@color/white</color>
 </resources>

@@ -48,6 +48,7 @@ class SignUpFragment : Fragment() {
     private fun validation() {
         val submittedEmail: String = binding.textInputEditTextUserName.text.toString()
         val submittedPassword: String = binding.textInputEditTextPassword.text.toString()
+        val confirmedPassword: String = binding.textInputEditTextConfirm.text.toString()
 
         emailValidate =
             submittedEmail.contains('@')
@@ -61,8 +62,11 @@ class SignUpFragment : Fragment() {
             Log.i("Main Tag", "emailValidate ${binding.textViewErrorMessage.text}")
         } else if (!passwordValidate) {
             binding.textViewErrorMessage.text = getString(R.string.text_view_error_message_passwrod)
-        } else {
-            binding.textViewErrorMessage.text = ""
+        } else if(confirmedPassword != submittedPassword){
+            binding.textViewErrorMessage.text = getString(R.string.text_view_error_message_passwrod_Confirmation)
+        }
+        else {
+            binding.textViewErrorMessage.text = getString(R.string.signed_up_successfully)
         }
     }
 
