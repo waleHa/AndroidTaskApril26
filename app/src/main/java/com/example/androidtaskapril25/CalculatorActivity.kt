@@ -40,7 +40,6 @@ class CalculatorActivity : AppCompatActivity() {
     }
 
 
-
     private fun clickingNumbers() {
         binding.button0.setOnClickListener {
             handleClickedNumber(0)
@@ -106,7 +105,12 @@ class CalculatorActivity : AppCompatActivity() {
         }
 
         binding.buttonEqual.setOnClickListener {
-            Log.i(TAG, "$firstNumber $operation $secondNumber")
+            handleEqual()
+        }
+    }
+
+    private fun handleEqual() {
+        if (operation.isNotEmpty()) {
             result = when (operation) {
                 "+" -> submitEquation(firstNumber.toDouble(), secondNumber.toDouble(), ::add)
                 "*" -> submitEquation(firstNumber.toDouble(), secondNumber.toDouble(), multiply)
@@ -161,14 +165,14 @@ class CalculatorActivity : AppCompatActivity() {
     private fun handleDropLast() {
         val input = binding.textViewOperation.text.toString()
 
-        val droppedValue = input[input.length-1]
-        if (droppedValue.isDigit()){
-            if(operation.isEmpty()){
+        val droppedValue = input[input.length - 1]
+        if (droppedValue.isDigit()) {
+            if (operation.isEmpty()) {
                 firstNumber = firstNumber.dropLast(1)
-            }else{
+            } else {
                 secondNumber = secondNumber.dropLast(1)
             }
-        }else{
+        } else {
             operation = ""
         }
         binding.textViewOperation.text = input.dropLast(1)
@@ -177,7 +181,9 @@ class CalculatorActivity : AppCompatActivity() {
 
     fun <T> handleClickedNumber(num: T) {
         val input = binding.textViewOperation.text.toString()
+        if (num is String && num != ".") {
 
+        }
         //Second number
         if (operation.isNotEmpty()) {
             if (num == "." && "." in secondNumber) {
