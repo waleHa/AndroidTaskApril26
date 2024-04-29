@@ -10,16 +10,15 @@
 
     <TextView
         android:id="@+id/text_view_operation"
+        style="@style/custom_number_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
-        android:background="@drawable/borders"
         android:ellipsize="start"
         android:inputType="text"
         android:maxLines="1"
         android:paddingHorizontal="5dp"
         android:paddingVertical="22dp"
-        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -28,12 +27,11 @@
     <!-- Group1-->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_C"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/selector_button_signs"
         android:text="C"
-        android:textColor="@color/button_signs_text_color"
         app:layout_constraintBottom_toTopOf="@id/button_7"
         app:layout_constraintEnd_toStartOf="@+id/button_X"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,12 +39,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_X"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/selector_button_signs"
         android:text="X"
-        android:textColor="@color/button_signs_text_color"
         app:layout_constraintBottom_toTopOf="@id/button_8"
         app:layout_constraintEnd_toStartOf="@+id/button_div"
         app:layout_constraintStart_toEndOf="@+id/button_C"
@@ -54,12 +51,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_div"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/selector_button_signs"
         android:text="/"
-        android:textColor="@color/button_signs_text_color"
         app:layout_constraintBottom_toTopOf="@id/button_9"
         app:layout_constraintEnd_toStartOf="@+id/button_mult"
         app:layout_constraintStart_toEndOf="@+id/button_X"
@@ -67,12 +63,11 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_mult"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="100dp"
-        android:background="@drawable/selector_button_signs"
         android:text="*"
-        android:textColor="@color/button_signs_text_color"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_div"
         app:layout_constraintTop_toBottomOf="@id/text_view_operation" />
@@ -81,10 +76,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_7"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:style="@style/custom_number_button"
         android:text="7"
         app:layout_constraintEnd_toStartOf="@+id/button_X"
         app:layout_constraintStart_toStartOf="parent"
@@ -92,35 +87,33 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_8"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
         android:text="8"
-        android:style="@style/custom_number_button"
         app:layout_constraintEnd_toStartOf="@+id/button_div"
         app:layout_constraintStart_toEndOf="@+id/button_7"
         app:layout_constraintTop_toBottomOf="@+id/button_X" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_9"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/selector_button_numbers"
         android:text="9"
-        android:style="@style/custom_number_button"
         app:layout_constraintEnd_toStartOf="@+id/button_mult"
         app:layout_constraintStart_toEndOf="@+id/button_8"
         app:layout_constraintTop_toBottomOf="@+id/button_div" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_minus"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/selector_button_signs"
         android:text="-"
-        android:textColor="@color/button_signs_text_color"
         app:layout_constraintEnd_toEndOf="@id/button_mult"
         app:layout_constraintStart_toStartOf="@id/button_mult"
         app:layout_constraintTop_toBottomOf="@id/button_mult" />
@@ -129,21 +122,21 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_4"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
         android:text="4"
-        android:style="@style/custom_number_button"
         app:layout_constraintEnd_toStartOf="@+id/button_X"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_7" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_5"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:style="@style/custom_number_button"
         android:text="5"
         app:layout_constraintEnd_toStartOf="@+id/button_div"
         app:layout_constraintStart_toEndOf="@+id/button_7"
@@ -151,10 +144,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_6"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:style="@style/custom_number_button"
         android:text="6"
         app:layout_constraintEnd_toStartOf="@+id/button_mult"
         app:layout_constraintStart_toEndOf="@+id/button_8"
@@ -162,10 +155,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_plus"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:style="@style/custom_number_button"
         android:text="+"
         app:layout_constraintEnd_toEndOf="@id/button_mult"
         app:layout_constraintStart_toStartOf="@id/button_mult"
@@ -176,46 +169,45 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_1"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
         android:text="1"
-        android:style="@style/custom_number_button"
         app:layout_constraintEnd_toStartOf="@+id/button_X"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button_4" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_2"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
         android:text="2"
-        android:style="@style/custom_number_button"
         app:layout_constraintEnd_toStartOf="@+id/button_div"
         app:layout_constraintStart_toEndOf="@+id/button_7"
         app:layout_constraintTop_toBottomOf="@+id/button_5" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_3"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
         android:text="3"
-        android:style="@style/custom_number_button"
         app:layout_constraintEnd_toStartOf="@+id/button_mult"
         app:layout_constraintStart_toEndOf="@+id/button_8"
         app:layout_constraintTop_toBottomOf="@+id/button_6" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_equal"
-        android:layout_width="@dimen/button_calculator_68dp"
+        style="@style/custom_sign_button"
 
+        android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="0dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/selector_button_signs"
         android:text="="
-        android:textColor="@color/button_signs_text_color"
         app:layout_constraintBottom_toBottomOf="@+id/button_dot"
         app:layout_constraintEnd_toEndOf="@id/button_mult"
         app:layout_constraintStart_toStartOf="@id/button_mult"
@@ -226,10 +218,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_mode"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/selector_button_signs"
         android:text="%"
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/button_X"
@@ -238,10 +230,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_0"
+        style="@style/custom_number_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:style="@style/custom_number_button"
         android:text="0"
         app:layout_constraintEnd_toStartOf="@+id/button_div"
         app:layout_constraintStart_toEndOf="@+id/button_7"
@@ -249,10 +241,10 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button_dot"
+        style="@style/custom_sign_button"
         android:layout_width="@dimen/button_calculator_68dp"
         android:layout_height="@dimen/button_calculator_68dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/selector_button_signs"
         android:text="."
         android:textColor="@color/white"
         app:layout_constraintEnd_toStartOf="@+id/button_mult"

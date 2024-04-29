@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <style name="custom_number_button" parent="TextAppearance.AppCompat.Button">
+    <style name="custom_sign_button" parent="TextAppearance.AppCompat.Button">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">@color/button_signs_text_color</item>
-        <item name="android:background">@drawable/selector_button_numbers</item>
+        <item name="android:background">@drawable/selector_button_signs</item>
     </style>
 </resources>
