@@ -12,18 +12,15 @@ class CalculatorActivity : AppCompatActivity() {
     var firstNumber = ""
     var secondNumber = ""
     var operation = ""
-    val TAG = "CalculatorActivity"
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityCalculatorBinding.inflate(layoutInflater)
         setContentView(binding.root)
         setCalculator()
-
-
     }
 
     private fun setCalculator() {
-
         clickingNumbers()
         clickingSigns()
     }
@@ -33,10 +30,36 @@ class CalculatorActivity : AppCompatActivity() {
             firstNumber = ""
             clear()
         }
-
         binding.buttonX.setOnClickListener {
             handleDropLast()
         }
+        binding.buttonPlus.setOnClickListener {
+            handleClickedSign("+")
+        }
+        binding.buttonMinus.setOnClickListener {
+            handleClickedSign("-")
+        }
+
+        binding.buttonMult.setOnClickListener {
+            handleClickedSign("*")
+        }
+
+        binding.buttonDiv.setOnClickListener {
+            handleClickedSign("/")
+        }
+
+        binding.buttonMode.setOnClickListener {
+            handleClickedSign("%")
+        }
+
+        binding.buttonDot.setOnClickListener {
+            handleClickedNumber(".")
+        }
+
+        binding.buttonEqual.setOnClickListener {
+            handleEqual()
+        }
+
     }
 
 
@@ -81,32 +104,6 @@ class CalculatorActivity : AppCompatActivity() {
             handleClickedNumber(9)
         }
 
-        binding.buttonPlus.setOnClickListener {
-            handleClickedSign("+")
-        }
-        binding.buttonMinus.setOnClickListener {
-            handleClickedSign("-")
-        }
-
-        binding.buttonMult.setOnClickListener {
-            handleClickedSign("*")
-        }
-
-        binding.buttonDiv.setOnClickListener {
-            handleClickedSign("/")
-        }
-
-        binding.buttonMode.setOnClickListener {
-            handleClickedSign("%")
-        }
-
-        binding.buttonDot.setOnClickListener {
-            handleClickedNumber(".")
-        }
-
-        binding.buttonEqual.setOnClickListener {
-            handleEqual()
-        }
     }
 
     private fun handleEqual() {
