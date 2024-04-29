@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin_regular">12dp</dimen>
+    <dimen name="button_calculator_68dp">68dp</dimen>
+
+
 </resources>

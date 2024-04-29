@@ -4,5 +4,4 @@
     <item android:drawable="@drawable/shape_button_numbers_pressed" android:state_pressed="true" /> <!-- pressed -->
     <item android:drawable="@drawable/shape_button_numbers_pressed" android:state_focused="true" /> <!-- focused -->
     <item android:drawable="@drawable/borders" />
-
 </selector>
