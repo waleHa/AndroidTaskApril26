@@ -2,6 +2,6 @@
 <resources>
     <dimen name="margin_regular">12dp</dimen>
     <dimen name="button_calculator_68dp">68dp</dimen>
-
-
+    <dimen name="button_calculator_signs_size">30dp</dimen>
+    <dimen name="button_calculator_numbers_size">40sp</dimen>
 </resources>
