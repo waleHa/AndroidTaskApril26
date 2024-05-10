@@ -1,6 +1,5 @@
 package com.example.androidtaskapril25
 
-import android.R
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
@@ -22,5 +21,6 @@ class MainActivity : AppCompatActivity() {
                         replace(binding.fragmentContainer.id, SignInFragment())
                     }
                 }
+//        findNavController().navigate()
     }
 }
